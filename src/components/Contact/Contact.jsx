@@ -32,7 +32,7 @@ export default function Contact() {
             <input type="tel" placeholder="Phone" />
             <textarea placeholder="Your Message" />
 
-            <button className="send-btn">Send Now</button>
+            <button className="send-btn">Send us</button>
           </div>
 
           {/* INFO CARD */}
