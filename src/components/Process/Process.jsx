@@ -3,7 +3,7 @@ import "./Process.css";
 import researchLogo from "../../assets/research.png"; // replace with your image
 import designLogo from "../../assets/design.png"; // replace with your image
 import developLogo from "../../assets/develop.png"; // replace with your image
-import testLogo from "../../assets/test.png"; // replace with your image
+import testLogo from "../../assets/Test.png"; // replace with your image
 
 const processSteps = [
   {
