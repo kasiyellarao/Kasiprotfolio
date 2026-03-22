@@ -1,0 +1,153 @@
+.process-section {
+  width: 100%;
+  padding: 80px 20px;
+  margin: 0 auto;
+  text-align: center;
+
+  background: linear-gradient(
+    180deg,
+    #7fc7da 0%,
+    #86cadc 30%,
+    #f0f0f0 100%
+  );
+
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.process-title {
+  font-size: clamp(24px, 5vw, 36px);
+  font-weight: 700;
+  color: #0f1e3e;
+  margin-bottom: 60px;
+}
+
+/* -------- CARD LAYOUT -------- */
+
+.process-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.process-card:hover {
+/* border: 1px solid #000000; */
+/* transform: translateY(-5px); */
+box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.process-card {
+  flex: 1 1 263px;
+  max-width: 263px;
+  min-width: 220px;
+  height: 300px;
+
+  background: #f0f6fb;
+  border-radius: 12px;
+  padding: 30px 20px;
+
+  position: relative;
+  box-sizing: border-box;
+
+  /* ✅ center icon & title */
+  text-align: center;
+}
+
+/* -------- ICON -------- */
+
+.process-card-logo {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 15px auto;
+}
+
+.process-card-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* -------- NUMBER -------- */
+.process-card-number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  font-size: clamp(24px, 5vw, 36px);
+  font-weight: 700;
+
+  color: #e0e6eb;
+}
+
+/* -------- TITLE -------- */
+
+.process-card-title {
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 700;
+  color: #0f1e3e;
+  margin-bottom: 10px;
+
+  text-align: center;
+}
+
+/* -------- UNDERLINE -------- */
+
+.underlines {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.underlines span:first-child {
+  width: 35px;
+  height: 4px;
+  background: #2fa4e7;
+  border-radius: 2px;
+}
+
+.underlines span:last-child {
+  width: 12px;
+  height: 4px;
+  background: #2fa4e7;
+  border-radius: 2px;
+}
+
+/* -------- DESCRIPTION -------- */
+
+.process-card-desc {
+  font-size: clamp(12px, 1.5vw, 14px);
+  color: #1a1a1a;
+  line-height: 1.5;
+
+  /* ✅ keep text normal */
+  text-align: left;
+}
+
+/* -------- RESPONSIVE -------- */
+
+@media (max-width: 768px) {
+  .process-cards {
+    gap: 20px;
+  }
+
+  .process-card {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .process-title {
+    margin-bottom: 40px;
+  }
+
+  .process-card {
+    flex: 1 1 90%;
+    max-width: 90%;
+  }
+}

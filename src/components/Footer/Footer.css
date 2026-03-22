@@ -1,0 +1,263 @@
+.footer {
+  width: 100%;
+  height: 380px;
+  background: linear-gradient(180deg, #78c0d7 0%, #eafffb 100%);
+  font-family: "Poppins", sans-serif;
+  color: #092a4d;
+}
+
+/* MAIN CONTAINER */
+.footer-container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 70px 90px 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ================= LEFT ================= */
+
+.footer-left {
+  width: 30%;
+  margin-top: -50px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 0px;
+}
+
+.footer-left p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+/* SOCIALS */
+.socials {
+  display: flex;
+  gap: 14px;
+}
+
+.social-btn {
+  width: 42px;
+  height: 42px;
+
+  background: #071c4a;
+  color: #fff;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* ================= CENTER ================= */
+
+.footer-center {
+  width: 28%;
+}
+
+.footer-center h3,
+.footer-right h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.line {
+  width: 36px;
+  height: 3px;
+  background: #0c8bc0;
+  border-radius: 3px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-center ul {
+  list-style: none;
+}
+
+.footer-center li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* ================= RIGHT ================= */
+
+.footer-right {
+  width: 26%;
+}
+
+.footer-right p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* INPUT */
+.footer-right input {
+  width: 100%;
+  height: 46px;
+
+  border-radius: 8px;
+  border: none;
+
+  background: #75bfd7;
+  color: #fff;
+  padding: 0 14px;
+
+  margin-bottom: 14px;
+}
+
+.footer-right input::placeholder {
+  color: #eefbfd;
+}
+
+/* BUTTON */
+.footer-right button {
+  width: fit-content;
+  padding: 10px 26px;
+
+  border-radius: 8px;
+  border: none;
+
+  background: white;
+  color: #071c4a;
+
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===================================== */
+/* RESPONSIVE - TABLET (1024px ↓) */
+/* ===================================== */
+
+@media (max-width: 1024px) {
+
+  .footer {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .footer-container {
+    padding: 60px 40px 0;
+  }
+
+  .footer-left {
+    width: 32%;
+    margin-top: -30px;
+  }
+
+  .footer-center {
+    width: 32%;
+  }
+
+  .footer-right {
+    width: 32%;
+  }
+
+}
+
+
+/* ===================================== */
+/* RESPONSIVE - SMALL TABLET (768px ↓) */
+/* ===================================== */
+
+@media (max-width: 768px) {
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 36px;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width: 100%;
+  }
+
+  .footer-left {
+    margin-top: 0;
+  }
+
+  .footer-logo {
+    margin: auto;
+    display: block;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .line {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-right input {
+    max-width: 360px;
+    margin: auto auto 14px;
+    display: block;
+  }
+
+  .footer-right button {
+    margin: auto;
+  }
+
+}
+
+
+/* ===================================== */
+/* RESPONSIVE - MOBILE (480px ↓) */
+/* ===================================== */
+
+@media (max-width: 480px) {
+
+  .footer {
+    font-size: 13px;
+  }
+
+  .footer-container {
+    padding: 40px 18px 0;
+    gap: 28px;
+  }
+
+  .footer-left p,
+  .footer-right p,
+  .footer-center li {
+    font-size: 13px;
+  }
+
+  .footer-center h3,
+  .footer-right h3 {
+    font-size: 17px;
+  }
+
+  .footer-logo {
+    width: 120px;
+  }
+
+  .social-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .footer-right input {
+    height: 42px;
+  }
+
+  .footer-right button {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+
+}

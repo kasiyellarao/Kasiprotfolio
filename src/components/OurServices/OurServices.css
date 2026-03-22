@@ -1,0 +1,154 @@
+.services-section {
+  width: 100%;
+  padding: 90px 20px;
+
+  background: linear-gradient(
+    180deg,
+    #7fc7da 0%,
+    #86cadc 30%,
+    #f0f0f0 100%
+  );
+
+  font-family: "Poppins", sans-serif;
+}
+
+/* -------- Title ---------- */
+
+.services-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #0f1e3e;
+  margin-bottom: 60px;
+}
+
+.services-title span {
+  color: #0f1e3e;
+}
+
+/* -------- Grid ---------- */
+
+.services-grid {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* -------- Card ---------- */
+
+.service-card {
+  background: #f1f9fd;
+  border-radius: 14px;
+  padding: 30px 25px;
+  transition: 0.3s ease;
+
+  /* ✅ center icon + title */
+  text-align: center;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* -------- Icon Box ---------- */
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto 20px auto; /* ✅ centers the icon */
+}
+
+.icon-box img {
+  width: 35px;
+  height: 35px;
+}
+
+/* -------- Title ---------- */
+
+.service-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f1e3e;
+  margin-bottom: 10px;
+
+  text-align: center;
+}
+
+/* -------- Underlines ---------- */
+
+.underlines {
+  display: flex;
+  justify-content: center; /* ✅ underline center */
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.underlines span:first-child {
+  width: 35px;
+  height: 4px;
+  background: #2fa4e7;
+  border-radius: 2px;
+}
+
+.underlines span:last-child {
+  width: 12px;
+  height: 4px;
+  background: #2fa4e7;
+  border-radius: 2px;
+}
+
+.view-btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 20px;
+  background:#0a66c2;
+  color:white;
+  border-radius:6px;
+  text-decoration:none;
+  font-size:14px;
+  transition:0.3s;
+}
+
+.view-btn:hover{
+  background:#084a8c;
+}
+
+/* -------- Paragraph ---------- */
+
+.service-card p {
+  font-size: 14px;
+  color: #222;
+  line-height: 1.6;
+
+  /* ✅ keep content text left */
+  text-align: left;
+}
+
+/* -------- RESPONSIVE ---------- */
+
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-title {
+    font-size: 28px;
+  }
+}

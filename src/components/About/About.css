@@ -1,0 +1,138 @@
+/* ================= OUTER SECTION ================= */
+
+.about-wrapper {
+  width: 100%;
+  padding: 80px 0;
+  /* background: #f8f9fb; */
+   background: linear-gradient(
+    180deg,
+    #7fc7da 0%,
+    #86cadc 30%,
+    #f0f0f0 100%
+  );
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+}
+
+/* ================= FRAME PAGE ================= */
+
+.about-frame {
+  width: 1440px;
+  min-height: 598px;
+  background: #0E1F510D;
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding: 60px;
+}
+
+/* ================= IMAGE CARD ================= */
+
+.image-card {
+  width: 555px;
+  aspect-ratio: 555 / 398;
+  border-radius: 20px;
+  overflow: hidden;
+  /* background: #0E1F510D; */
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= CONTENT ================= */
+
+.about-content {
+  max-width: 600px;
+}
+
+.about-tag {
+  color: #0a2c7d;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.about-title {
+  font-size: 32px;
+  color: #079adf;
+  margin-bottom: 16px;
+  line-height: 1.25;
+}
+
+.about-content p {
+  font-size: 15px;
+  line-height: 1.75;
+  margin-bottom: 14px;
+  color: #333;
+}
+
+/* ================= BUTTON ================= */
+
+.contact-btn {
+  margin-top: 20px;
+  background: #d1eaf4;
+  padding: 16px 34px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.contact-btn span {
+  display: block;
+  font-size: 14px;
+  color: #046adf;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Large laptops */
+@media (max-width: 1500px) {
+  .about-frame {
+    width: 95%;
+  }
+
+  .image-card {
+    width: 480px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .about-frame {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .image-card {
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+  }
+
+  .about-content {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+  .about-title {
+    font-size: 24px;
+  }
+
+  .image-card {
+    max-width: 320px;
+    border-radius: 14px;
+  }
+
+  .contact-btn {
+    width: 100%;
+  }
+}

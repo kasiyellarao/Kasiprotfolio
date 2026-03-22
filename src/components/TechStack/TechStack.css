@@ -1,0 +1,112 @@
+.techstack-container {
+  text-align: center;
+  padding: 40px 20px;
+  /* background-color: rgba(255, 251, 248, 0.8); */
+   background: linear-gradient(
+    180deg,
+    #7fc7da 0%,
+    #86cadc 30%,
+    #f0f0f0 100%
+  );
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* .heading-underline {
+  width: 40px;
+  height: 4px;
+  background: linear-gradient(to right, #4B0082, #FF4F81);
+  margin: 0 auto 10px auto;
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #a64ca6;
+  margin-bottom: 5px;
+} */
+
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #112b84;
+}
+
+.techstack-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* Makes nav wrap on smaller screens */
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.nav-item.active {
+  color: #a64ca6;
+  border-bottom: 3px solid #a64ca6;
+}
+
+.nav-item:hover {
+  color: #a64ca6;
+}
+
+.techstack-image img {
+  max-width: 1300px;
+  width: 100%;
+  height: auto;
+    background-color: transparent;
+  mix-blend-mode: multiply; /* or darken depending on bg */
+}
+
+
+
+/* 📱 Responsive Design Adjustments */
+
+/* Tablet Screens (768px - 1024px) */
+@media (max-width: 1024px) {
+  .techstack-image img {
+    max-width: 1000px;
+  }
+}
+
+/* Mobile Screens (up to 767px) */
+@media (max-width: 767px) {
+  .techstack-image img {
+    max-width: 100%;
+    padding: 0 10px; /* Small padding for spacing */
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  /* 🔹 Make nav items longer & easier to tap on mobile */
+  .techstack-nav {
+    gap: 15px;
+  }
+
+  .nav-item {
+    padding: 10px 20px; /* More clickable area */
+    font-size: 18px; /* Slightly bigger text */
+    border-radius: 6px; /* Slight rounding for nicer look */
+    background-color: rgba(166, 76, 166, 0.1); /* Soft background */
+  }
+
+  .nav-item.active {
+    background-color: rgba(166, 76, 166, 0.2);
+    border-bottom: 3px solid #a64ca6;
+  }
+}

@@ -1,0 +1,183 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* SECTION */
+.records-section {
+  padding: 80px 20px 60px;
+  background: linear-gradient(
+    180deg,
+    #7fc7da 0%,
+    #86cadc 30%,
+    #f0f0f0 100%
+  );
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* TITLE */
+.records-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #0b1b4f;
+  margin-bottom: 50px;
+}
+
+/* CONTAINER */
+.records-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.record-card {
+  width: 100%;
+  max-width: 300px;
+  min-height: 260px;
+  background: #eaf7fc;
+  border-radius: 12px;
+  padding: 26px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.record-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ICON */
+.icon-box {
+  width: 62px;
+  height: 62px;
+  background: #ffffff;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 18px;
+}
+
+.icon-box img {
+  width: 34px;
+  height: auto;
+}
+
+/* CARD TITLE */
+.record-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0b1b4f;
+}
+
+/* ACCENT LINES */
+.line-group {
+  margin: 9px 0 20px;
+  display: flex;
+  gap: 6px;
+}
+
+.line-group span {
+  background: #0c8bc0;
+  height: 4px;
+  border-radius: 8px;
+}
+
+.line-group span:first-child {
+  width: 38px;
+}
+
+.line-group span:last-child {
+  width: 12px;
+}
+
+/* COUNT */
+.count {
+  margin-top: auto;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* DOTS */
+.dots {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.dots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #091e55;
+  opacity: 0.35;
+}
+
+.dots span.active {
+  opacity: 1;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+/* TABLET */
+@media (max-width: 992px) {
+  .records-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .records-container {
+    gap: 40px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .records-container {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .record-card {
+    max-width: 90%;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .records-section {
+    padding: 60px 16px 40px;
+  }
+
+  .records-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .record-card h3 {
+    font-size: 15px;
+  }
+
+  .count {
+    font-size: 14px;
+  }
+}
