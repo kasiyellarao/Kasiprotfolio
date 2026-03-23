@@ -4,21 +4,12 @@ import project1 from "../../assets/img.png";
 import project2 from "../../assets/project2.png";
 import project3 from "../../assets/project3.png";
 import project4 from "../../assets/project4.png";
+import project5 from "../../assets/project5.png";
+import project6 from "../../assets/project6.png";
 
 export default function Projects() {
   const projects = [
-    {
-      title: "GameChanger Movie Gallery Website",
-      image: project1,
-      live: "https://gamechangeralbum.netlify.app/",
-      github: "https://github.com/kasiyellarao",
-    },
-    {
-      title: "Swiggy Clone",
-      image: project2,
-      live: "https://swiggyworld.netlify.app/",
-      github: "https://github.com/kasiyellarao",
-    },
+ 
     {
       title: "Company Website",
       image: project3,
@@ -29,6 +20,32 @@ export default function Projects() {
       title: "NEXFROX Website",
       image: project4,
       live: "https://kasi3rd.netlify.app/",
+      github: "https://github.com/kasiyellarao",
+    },
+
+       {
+      title: "Calculator-fullStack",
+      image: project5,
+      live: "https://calculator-appkasi.netlify.app/",
+      github: "https://github.com/kasiyellarao",
+    },
+    {
+      title: "To-Do-List",
+      image: project6,
+      live: "https://to-do-list-kasiapp.netlify.app/",
+      github: "https://github.com/kasiyellarao",
+    },
+
+       {
+      title: "GameChanger Movie Gallery Website",
+      image: project1,
+      live: "https://gamechangeralbum.netlify.app/",
+      github: "https://github.com/kasiyellarao",
+    },
+    {
+      title: "Swiggy Clone",
+      image: project2,
+      live: "https://swiggyworld.netlify.app/",
       github: "https://github.com/kasiyellarao",
     },
   ];
