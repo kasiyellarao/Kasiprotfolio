@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import heroImg from "../../assets/kasi.png";
-import kasi from "../../assets/kasi.pdf";
+import kasi from "../../assets/CV_.pdf";
 
 export default function Hero() {
   return (
