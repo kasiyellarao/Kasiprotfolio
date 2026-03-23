@@ -5,7 +5,7 @@ import project2 from "../../assets/project2.png";
 import project3 from "../../assets/project3.png";
 import project4 from "../../assets/project4.png";
 import project5 from "../../assets/Screenshot 2026-03-23 120253.png";
-import project6 from "../../assets/project6.png";
+import project6 from "../../assets/Screenshot 2026-03-23 120436.png";
 
 export default function Projects() {
   const projects = [
