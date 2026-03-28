@@ -6,6 +6,7 @@ import project3 from "../../assets/project3.png";
 import project4 from "../../assets/project4.png";
 import project5 from "../../assets/Screenshot 2026-03-23 120253.png";
 import project6 from "../../assets/Screenshot 2026-03-23 120436.png";
+import project7 from "../../assets/Screenshot 2026-03-28 144449.png";
 
 export default function Projects() {
   const projects = [
@@ -50,7 +51,7 @@ export default function Projects() {
     },
     {
       title: "Weather-App",
-      image: project5,
+      image: project7,
       live: "https://city-weathers-app.netlify.app/",
       github: "https://github.com/kasiyellarao",
     },
