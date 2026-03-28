@@ -48,6 +48,12 @@ export default function Projects() {
       live: "https://swiggyworld.netlify.app/",
       github: "https://github.com/kasiyellarao",
     },
+    {
+      title: "Weather-App",
+      image: project5,
+      live: "https://city-weathers-app.netlify.app/",
+      github: "https://github.com/kasiyellarao",
+    },
   ];
 
   return (
